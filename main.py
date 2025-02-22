@@ -1,8 +1,8 @@
 
 import time
+import numpy as np
 from brainflow.board_shim import BoardShim, BoardIds
 from brainflow.data_filter import DataFilter, FilterTypes
-import numpy as np
 from init_board import init_board
 from get_channels import get_channels
 from get_sampling_rate import get_sampling_rate
@@ -26,13 +26,13 @@ def main():
 
     # gets the data; answers the question what is on the channels right now? 
     data = board.get_board_data() 
-    print(Unfiltered: , data)
+    print('Unfiltered:', data)
     filtered_data = preprocess(eeg_channels, data, sampling_rate)
 
     # stop stream 
     board.stop_stream()
     board.release_session()
-    print(filtered: , filtered_data)
+    print('filtered:' , filtered_data)
 
 if __name__ == __main__:
     main()
