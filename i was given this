@@ -1,0 +1,1 @@
+# ignore this   ##################################################################################### data = board.get_current_board_data (256) # get latest 256 packages or less, doesnt remove them from internal buffer
