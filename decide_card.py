@@ -2,8 +2,8 @@
 import random
 
 def decide_card():
-    choices = ['laser cutter', 'blowtorch', 'giant drill', 'car', 'oversized key', 'rocket-powered ram']
-    your_number = random.randint(0,5)
-
-your_card = decide_card()
+    choices = ['boltcutters.jpg', 'blowtorch.jpg', 'drill.webp']
+    your_number = random.randint(0,3)
+    your_choice = choices[your_number]
+    return your_choice
 
